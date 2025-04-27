@@ -82,20 +82,23 @@ body {
   border-bottom: 0 solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-.button:active,
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+
+.button:visited { /* visited link */
+  color: #ffffff;
+}
+button:active { /* selected link */
+  color: #6c7dcf;
 }
 
 .button.contact {
-  background-color: #4C5BA8;
-  color: #ffffff;
+  background-color: transparent;
+  color: #4C5BA8;
   text-transform: uppercase;
-  border: 0 solid #ff7f50;
+  border: 2px solid #4C5BA8;
 }
 
 .button.contact:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  background-color: #4C5BA8;
+  color: #ffffff;    
+  text-decoration: none; /* No underlining */
 }
