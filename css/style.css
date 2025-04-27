@@ -1,10 +1,24 @@
+/*
+Colors used:
+Site colors 
+#292929 dark grey 
+#6E6E6E grey 
+
+Project colors
+#D7DBCD sincere green
+#4C5BA8 dusen purple 
+#9D6660 home brown 
+#FDFBF7 buttery white 
+#F1613D bzc red 
+*/
+
 body {
     background-color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #333333;
+    color: #292929;
   }
   
   h1, h2, h3, h4 {
@@ -31,4 +45,23 @@ body {
 
   img {
     width: 100%;
+  }
+
+  /*
+  Background Colors, Borders, and Hover States
+  */
+  a {
+    color: #4C5BA8;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover {
+    color: #3c55d5;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:visited { /* visited link */
+    color: #9D6660;
+  }
+  a:active { /* selected link */
+    color: #36427f;
   }
