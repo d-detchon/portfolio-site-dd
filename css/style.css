@@ -129,6 +129,24 @@ Project colors
   .row {
     margin: 25px 0;
   }
+
+  /* Project page*/
+  .project-page {
+  padding-top: 160px;
+}
+
+.project-page h4 {
+  margin-bottom: 4px;
+}
+
+.project-page p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.project-page .container {
+  padding-bottom: 60px;
+}
   
   /* Example Utility for box shadow */
   .css-box-shadow {
@@ -211,6 +229,8 @@ Project colors
     margin: 0 auto;
   }
 
+
+
   /* Work
      ========================================================================== */
      #work h3 {
@@ -221,6 +241,9 @@ Project colors
       margin-top: 4px; /* optional, depending how tight you want it */
     }
 
+    #work .container {
+      padding-bottom: 36px;
+    }
 
   /* Footer
      ========================================================================== */
