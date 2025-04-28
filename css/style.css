@@ -12,6 +12,16 @@ Project colors
 #F1613D bzc red 
 */
 
+header {
+  background-color: #fef3dd;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #6E6E6E;
+}
+
+* {
+  box-sizing: border-box;
+}
 body {
     background-color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
@@ -101,4 +111,9 @@ button:active { /* selected link */
   background-color: #4C5BA8;
   color: #ffffff;    
   text-decoration: none; /* No underlining */
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
