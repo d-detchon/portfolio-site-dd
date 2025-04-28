@@ -92,6 +92,7 @@ Project colors
     border-radius: 18px;
     border-bottom: 0 solid #994c30;
     transition: 0.2s opacity;
+    margin-bottom: 20px;
   }
   
   .button:visited {
@@ -212,7 +213,13 @@ Project colors
 
   /* Work
      ========================================================================== */
-
+     #work h3 {
+      margin-bottom: 8px; /* or even 4px if you want it tighter */
+    }
+    
+    #work p {
+      margin-top: 4px; /* optional, depending how tight you want it */
+    }
 
 
   /* Footer
