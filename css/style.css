@@ -136,17 +136,28 @@ button:active { /* selected link */
 /* Layout styling */
 .container {
   padding: 0 15px;
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 #hero {
   background-color: #ffffff;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
+  max-width: 780px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#hero h1 {
-  text-align: center; /* Centers text */
+
+#hero span {
+  color: #6E6E6E;
+  font-weight: 200;
+  font-size: 16px;
+  display: block;
+  line-height: 1.2;
+  margin-top: -15px;
 }
 
 .logo {
@@ -156,6 +167,7 @@ button:active { /* selected link */
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+
 
 /* Footer styling */
 footer {
