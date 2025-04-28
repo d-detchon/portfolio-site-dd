@@ -1,5 +1,6 @@
 /*
 Colors used:
+==========================================================================
 Site colors 
 #292929 dark grey 
 #6E6E6E grey 
@@ -12,58 +13,29 @@ Project colors
 #F1613D bzc red 
 */
 
-nav > ul {
-  list-style-type: none; /* Removes the default bullet points from the list */
-  padding: 0; /* Removes default padding around the list */
-}
+/* Global Settings & Resets
+   ========================================================================== */
 
-nav > ul > li { 
-  display: inline-block; /* Makes the list items line up next to each other horizontally (instead of stacked vertically) */
-  width: 100 
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #292929
-}
-
-.css-box-shadow{
-	/*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
-	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-}
-
-header {
-  background-color: #faf6ee;
-  padding: 20px 10px 10px;
-  border-bottom: 3px solid #6E6E6E;
-  text-align: center;
-  position: fixed;
-  width: 100%
-}
-
-* {
-  box-sizing: border-box;
-}
-body {
+   * {
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
     color: #292929;
   }
+  
+  /* Typography
+     ========================================================================== */
   
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
+  
   h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -78,140 +50,191 @@ body {
     font-size: 1.75em;
     font-weight: 400;
   }
+  
   h4 {
     font-size: 1.35em;
     font-weight: 400;
   }
 
-  img {
-    width: 100%;
-  }
-
-  main {
-    padding-top: 133px;
-  }
-  /*
-  Background Colors, Borders, and Hover States
-  */
+    /* Add your paragraph styles here if needed */
+  
+  
+  /* Links & Buttons
+     ========================================================================== */
+  
+  /* Links */
   a {
     color: #3246ad;
-    text-decoration: none; /* No underlining */
+    text-decoration: none;
   }
+  
   a:hover, 
   a:focus {
     color: #3c55d5;
-    text-decoration: underline; /* Underlining when hovering over a link */
+    text-decoration: underline;
   }
-
-  a:visited { /* visited link */
+  
+  a:visited {
     color: #36427f;
   }
-  a:active { /* selected link */
+  
+  a:active {
     color: #18235b;
   }
-
-    
-  /*
-  buttons
-  */
-
+  
+  /* Buttons */
   .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #292929;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 12px;
-  border-radius: 18px;
-  border-bottom: 0 solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
+    display: inline-block;
+    background-color: #292929;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 18px;
+    border-bottom: 0 solid #994c30;
+    transition: 0.2s opacity;
+  }
+  
+  .button:visited {
+    color: #ffffff;
+  }
+  
+  button:active {
+    color: #6c7dcf;
+  }
+  
+  .button.contact {
+    background-color: transparent;
+    color: #F8F8F8;
+    text-transform: uppercase;
+    border: 2px solid #F8F8F8;
+    margin-bottom: 20px;
+  }
+  
+  .button.contact:hover {
+    background-color: #4C5BA8;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Layout Containers & Utility Classes
+     ========================================================================== */
+  
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    margin: 25px 0;
+  }
+  
+  /* Example Utility for box shadow */
+  .css-box-shadow {
+    width: [object Object]px;
+    height: [object Object]px;
+    background: #F8F8F8;
+    border: solid #BDBDBD 1px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Header & Navigation
+     ========================================================================== */
+  
+  /* Header */
+  header {
+    background-color: #faf6ee;
+    padding: 20px 10px 10px;
+    border-bottom: 3px solid #6E6E6E;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+  }
+  
+  /* Navigation */
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+    /* Consider adding a specific width or removing this line if not needed */
+    width: 100;
+  }
+  
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #292929;
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 250px;
+  }
+  
+  /* Hero Section
+     ========================================================================== */
+  
+  #hero {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+    max-width: 780px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #hero span {
+    color: #6E6E6E;
+    font-weight: 200;
+    font-size: 16px;
+    display: block;
+    line-height: 1.2;
+    margin-top: -15px;
+  }
+  
+  /* Main content top spacing (accounting for fixed header) */
+  main {
+    padding-top: 133px;
+  }
+  
+  /* Work
+     ========================================================================== */
 
-.button:visited { /* visited link */
-  color: #ffffff;
-}
-button:active { /* selected link */
-  color: #6c7dcf;
-}
-
-/* Layout styling */
-.container {
-  padding: 0 15px;
-  max-width: 1200px; 
-  margin: 0 auto;
-}
-
-#hero {
-  background-color: #ffffff;
-  padding: 20px 0;
-  display: block;
-  width: 100%;
-  max-width: 780px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-
-#hero span {
-  color: #6E6E6E;
-  font-weight: 200;
-  font-size: 16px;
-  display: block;
-  line-height: 1.2;
-  margin-top: -15px;
-}
-
-.logo {
-  max-width: 250px;
-}
-
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-
-/* Footer styling */
-footer {
-  background-color: #292929; /* dark gray background */
-  padding: 40px 20px; /* Space inside the footer */
-  text-align: center; /* Center-align all text and elements */
-}
-
-/* Footer heading (Get in Touch) */
-footer h2 {
-  margin-bottom: 20px; /* Space below the heading */
-  font-size: 24px; /* Font size for heading */
-  color: #F8F8F8;
-}
-
-/* Container for social media icons */
-.social-icons a {
-  display: inline-block; /* Align icons horizontally */
-  margin: 0 10px; /* Space between icons */
-}
-
-/* Size for social media icons */
-.social-icons img {
-  width: 32px;
-  height: 32px;
-}
-
-/* Copyright text */
-footer .copyright {
-  margin-top: 30px; /* Space above copyright */
-  font-size: 14px; /* Smaller text size */
-  color: #6E6E6E; /* Medium gray text */
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #F8F8F8;
-  text-transform: uppercase;
-  border: 2px solid #F8F8F8;
-  margin-bottom: 20px;
-}
-
-.button.contact:hover {
-  background-color: #4C5BA8;
-  color: #ffffff;    
-  text-decoration: none; /* No underlining */
-}
+  /* Footer
+     ========================================================================== */
+  
+  footer {
+    background-color: #292929;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #F8F8F8;
+  }
+  
+  /* Social Icons within Footer */
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  footer .copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6E6E6E;
+  }
