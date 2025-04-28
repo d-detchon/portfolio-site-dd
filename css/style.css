@@ -29,12 +29,24 @@ nav > ul > li > a {
   color: #292929
 }
 
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+
 header {
-  background-color: #fef3dd;
-  padding: 10px;
-  margin: 10px;
+  background-color: #faf6ee;
+  padding: 20px 10px 10px;
   border-bottom: 3px solid #6E6E6E;
   text-align: center;
+  position: fixed;
+  width: 100%
 }
 
 * {
@@ -75,6 +87,9 @@ body {
     width: 100%;
   }
 
+  main {
+    padding-top: 133px;
+  }
   /*
   Background Colors, Borders, and Hover States
   */
@@ -136,10 +151,21 @@ button:active { /* selected link */
   padding: 0 15px;
 }
 
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 #hero h1 {
   text-align: center; /* Centers text */
 }
 
 .logo {
   max-width: 250px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
