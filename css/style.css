@@ -55,6 +55,10 @@ Project colors
     font-size: 1.35em;
     font-weight: 400;
   }
+  p {
+      line-height: 1.4;
+      margin-bottom: 0.8em;
+  }
 
     /* Add your paragraph styles here if needed */
   
@@ -241,8 +245,22 @@ Project colors
       margin-top: 4px; /* optional, depending how tight you want it */
     }
 
-    #work .container {
-      padding-bottom: 36px;
+
+
+
+  /* About
+     ========================================================================== */
+     
+     #about h4 {
+      margin-bottom: 8px;
+    }
+    
+    #about p {
+      margin-top: 8px;
+    }
+
+    #about .container {
+      padding-bottom: 120px;
     }
 
   /* Footer
@@ -252,6 +270,7 @@ Project colors
     background-color: #292929;
     padding: 40px 20px;
     text-align: center;
+    margin-top: 40px;
   }
   
   footer h2 {
