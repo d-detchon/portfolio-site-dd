@@ -68,14 +68,14 @@ Project colors
   
   /* Links */
   a {
-    color: #3246ad;
+    color: #3246ad; 
     text-decoration: none;
   }
   
   a:hover, 
   a:focus {
     color: #3c55d5;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:visited {
@@ -87,18 +87,26 @@ Project colors
   }
   
   /* Buttons */
+
   .button {
     display: inline-block;
     background-color: #292929;
     color: #ffffff;
     font-weight: 400;
+    text-decoration: none;
     padding: 12px;
     border-radius: 18px;
     border-bottom: 0 solid #994c30;
     transition: 0.2s opacity;
     margin-bottom: 20px;
+    transition: .3s opacity;
   }
   
+  .button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
   .button:visited {
     color: #ffffff;
   }
@@ -134,6 +142,16 @@ Project colors
     margin: 25px 0;
   }
 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding: 0 15px; /* adds	0px padding on top and bottom and 15px padding on left and right*/
+}
   /* Project page*/
   .project-page {
   padding-top: 160px;
@@ -169,7 +187,7 @@ Project colors
   /* Header */
   header {
     background-color: #faf6ee;
-    padding: 20px 10px 10px;
+    padding: 20px 30px 10px;
     border-bottom: 3px solid #6E6E6E;
     text-align: center;
     position: fixed;
@@ -295,3 +313,75 @@ Project colors
     font-size: 14px;
     color: #6E6E6E;
   }
+
+
+/* Media Queries
+   ========================================================================== */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
