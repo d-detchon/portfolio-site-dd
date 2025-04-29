@@ -411,7 +411,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #292929;
+  background: #ffb218;
   content: "";
   opacity: 0;
   transition: all 0.3s ease;
