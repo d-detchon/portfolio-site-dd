@@ -391,7 +391,7 @@ SVG animation
 ================================= */
 
 .wiggle {
-  animation: wiggle 1s infinite ease-in-out alternate;
+  animation: wiggle 1.3s infinite ease-in-out alternate;
   transform-origin: center;
 }
 
