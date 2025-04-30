@@ -390,15 +390,35 @@ X-large devices (1440px or larger)
 SVG animation
 ================================= */
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
+.wiggle {
+  animation: wiggle 1s infinite ease-in-out alternate;
+  transform-origin: center;
 }
 
+.delay-1 {
+  animation-delay: 0s;
+}
+
+.delay-2 {
+  animation-delay: 0.3s;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(1deg); }
+  20%  { transform: rotate(-1deg); }
+  30%  { transform: rotate(1deg); }
+  40%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); } /* rest of time is paused */
+}
+
+.delay-1 {
+  animation-delay: 0s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
 /* ==============================
 nav animation
 ================================= */
