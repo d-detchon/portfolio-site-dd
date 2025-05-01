@@ -187,9 +187,8 @@ Project colors
   /* Header */
   header {
     background-color: #faf6ee;
-    padding: 20px 30px 10px;
+    padding: 16px 0px 16px;
     border-bottom: 3px solid #6E6E6E;
-    text-align: center;
     position: fixed;
     width: 100%;
   }
@@ -198,12 +197,7 @@ Project colors
   nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
-    /* Consider adding a specific width or removing this line if not needed */
-    width: 100;
+    margin: 0;
   }
   
   nav > ul > li > a {
@@ -212,12 +206,43 @@ Project colors
     font-weight: 700;
     color: #292929;
   }
-  
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+/* Show items when .responsive is active */ 
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 2px solid #ffb521;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
   /* Logo */
   .logo {
     max-width: 150px;
   }
-  
+
   /* Hero Section
      ========================================================================== */
   
@@ -337,7 +362,25 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
   .col-md-6 {
     width: 50%;
   }
@@ -346,6 +389,54 @@ Medium devices (640px and larger)
   .logo {
     max-width: 250px;
   }
+
+  /* ==============================
+nav animation
+================================= */
+
+
+/* Top and Bottom borders come in */
+nav a::before,
+nav a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffb521;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+nav a::before {
+  top: 0;
+  transform: translateY(-10px);
+}
+
+nav a::after {
+  bottom: 0;
+  transform: translateY(10px);
+}
+
+/* Animate in and land farther from the text */
+nav a:hover::before {
+  opacity: 1;
+  transform: translateY(-4px); /* more distance above text */
+}
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(4px);  /* more distance below text */
+}
+
+
+/* Required to make links relative for pseudo-elements */
+nav a {
+  position: relative;
+  color: #FFF; /* optional — for contrast */
+  text-decoration: none;
+}
+
 }
 
 /* ==============================
@@ -378,10 +469,6 @@ Large devices (1024px or larger)
   [class*="col-"] {
     float: left;
     padding: 10px;
-  }
-
-  nav > ul > li {
-    display: inline-block;
   }
 
   .container {
@@ -429,50 +516,4 @@ SVG animation
 
 .delay-2 {
   animation-delay: 1s;
-}
-/* ==============================
-nav animation
-================================= */
-
-
-/* Top and Bottom borders come in */
-nav a::before,
-nav a::after {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #ffb521;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-nav a::before {
-  top: 0;
-  transform: translateY(-10px);
-}
-
-nav a::after {
-  bottom: 0;
-  transform: translateY(10px);
-}
-
-/* Animate in and land farther from the text */
-nav a:hover::before {
-  opacity: 1;
-  transform: translateY(-4px); /* more distance above text */
-}
-
-nav a:hover::after {
-  opacity: 1;
-  transform: translateY(4px);  /* more distance below text */
-}
-
-
-/* Required to make links relative for pseudo-elements */
-nav a {
-  position: relative;
-  color: #FFF; /* optional — for contrast */
-  text-decoration: none;
 }

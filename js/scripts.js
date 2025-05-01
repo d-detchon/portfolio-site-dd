@@ -1,12 +1,19 @@
-console.log("Hello World")
-
-const deborah = {
-    name: "Deborah",
-    age: 34,
-    hobbies: ["listening to new country", "swimming", "Zen"]
-  };
-  
-console.log(deborah);
-
-console.log(deborah.hobbies[0]); // shows "drawing"
-console.log(deborah.name);       // shows "Deborah"
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+function menuToggle() {
+  // Only toggle if screen is less than 640px wide
+  if (window.innerWidth < 640) {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'navtoggle';
+    }
+  }
+}
