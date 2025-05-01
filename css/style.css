@@ -231,13 +231,17 @@ Project colors
     margin: 0 auto;
   }
   
-  #hero span {
+  #hero p {
     color: #6E6E6E;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     line-height: 1.2;
     margin-top: -15px;
+  }
+
+  #hero h3 {
+    color: #6E6E6E; 
   }
   
   /* Main content top spacing (accounting for fixed header) */
