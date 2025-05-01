@@ -187,7 +187,7 @@ Project colors
   /* Header */
   header {
     background-color: #faf6ee;
-    padding: 24px 0px 16px;
+    padding: 16px 0px 16px;
     border-bottom: 3px solid #6E6E6E;
     position: fixed;
     width: 100%;
@@ -218,7 +218,7 @@ Project colors
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: -4px;
+  top: 2px;
   font-size: 20px;
 }
 
@@ -248,7 +248,7 @@ Project colors
   .logo {
     max-width: 150px;
   }
-
+  
 
   /* Hero Section
      ========================================================================== */
