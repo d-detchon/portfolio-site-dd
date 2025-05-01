@@ -329,6 +329,7 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    
   }
 
   nav {
@@ -340,11 +341,13 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-}
+
 /* Logo */
-.logo {
-  max-width: 250px;
+  .logo {
+    max-width: 250px;
+  }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
