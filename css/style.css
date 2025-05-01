@@ -215,7 +215,7 @@ Project colors
   
   /* Logo */
   .logo {
-    max-width: 250px;
+    max-width: 150px;
   }
   
   /* Hero Section
@@ -340,6 +340,10 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+}
+/* Logo */
+.logo {
+  max-width: 250px;
 }
 /* ==============================
 Large devices (1024px or larger)
