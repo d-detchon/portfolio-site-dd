@@ -307,8 +307,14 @@ Project colors
     }
 
     #about .container {
-      padding-bottom: 120px;
+      padding-bottom: 64px;
     }
+
+    .button-wrapper {
+      text-align: center;
+      margin-top: 1.5em;
+    }
+    
 
   /* Footer
      ========================================================================== */
